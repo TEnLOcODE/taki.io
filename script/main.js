@@ -183,8 +183,8 @@ let urlText = new PIXI.TextInput({
 });
 urlText.x = -urlText.width/2;
 urlText.y = frwaitingText.y + frwaitingText.height + 20;
-urlText.visible = false;
-//urlText.disabled = true;
+urlText.visible = true;
+urlText.disabled = true;
 urlText.addListener("input", () => {urlText.text = friendUrl});
 
 friendWaitingContainer.addChild(urlText);
